@@ -1,0 +1,38 @@
+service: # service name required
+disabledDeprecations: "*" # To disable all deprecation messages
+
+provider:
+  name: aws
+  profile: # profile name required
+  runtime: nodejs16.x
+  stage: ${opt:stage, 'dev'}
+  region: ${file(./config/config.${opt:stage, self:provider.dev, 'dev'}.json):REGION}
+  environment:
+    ENV: ${opt:stage, 'dev'}
+    USER_POOL_ID: ${file(./config/config.${opt:stage, self:provider.dev, 'dev'}.json):USER_POOL_ID}
+    REGION: ${file(./config/config.${opt:stage, self:provider.dev, 'dev'}.json):REGION}
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:*
+      Resource: "*"
+
+functions:
+  # authorize:
+  #   handler: handler.authorize
+
+  putUsersInDB:
+    handler: handler.putUsersInDB
+    events:
+      - http:
+          path: api/putUsersInDB
+          method: post
+          cors: true
+
+  userDetail:
+    handler: handler.userDetail
+    events:
+      - http:
+          path: api/userDetail
+          method: post
+          cors: true

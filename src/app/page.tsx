@@ -1,10 +1,14 @@
-import Image from "next/image";
-import LandingPage from "./component/landingPage";
+"use client";
 
-export default function Home() {
+import React from "react";
+import { Button } from "antd";
+
+const Page1 = () => {
   return (
-    <div>
-      <LandingPage />
-    </div>
+    <Button type="primary" className="w-full">
+      Button
+    </Button>
   );
-}
+};
+
+export default Page1;

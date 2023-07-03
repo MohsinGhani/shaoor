@@ -2,11 +2,7 @@ import React from "react";
 // import CommonHeader from "../header";
 
 const LandingPage = () => {
-  return (
-    <div>
-      <div>wsgeqhewqh</div>
-    </div>
-  );
+  return <div>wsgeqhewqh</div>;
 };
 
 export default LandingPage;
