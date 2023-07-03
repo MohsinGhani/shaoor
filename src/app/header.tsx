@@ -1,23 +1,14 @@
-import React from "react";
-import { Layout } from "antd";
+// import React from "react";
+// import { Layout } from "antd";
 
-const { Header } = Layout;
+// const { Header } = Layout;
 
-const CommonHeader = () => {
-  const headerStyle: React.CSSProperties = {
-    textAlign: "center",
-    color: "#fff",
-    height: 64,
-    paddingInline: 50,
-    lineHeight: "64px",
-    backgroundColor: "#7dbcea",
-  };
+// const CommonHeader = () => {
+//   return (
+//     <div>
+//       <Header style={{ display: "flex", alignItems: "center" }}>wjhwrj</Header>
+//     </div>
+//   );
+// };
 
-  return (
-    <div>
-      <Header style={headerStyle}>Header</Header>
-    </div>
-  );
-};
-
-export default CommonHeader;
+// export default CommonHeader;
