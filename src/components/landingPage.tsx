@@ -1,8 +1,9 @@
 import React from "react";
+import CommonHeader from "./header";
 // import CommonHeader from "../header";
 
 const LandingPage = () => {
-  return <div>wsgeqhewqh</div>;
+  return <CommonHeader />;
 };
 
 export default LandingPage;
