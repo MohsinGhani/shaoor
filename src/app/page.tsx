@@ -6,12 +6,7 @@ import LandingPage from "@/components/landingPage";
 import CommonHeader from "@/components/header";
 
 const Page1 = () => {
-  return (
-    <div>
-      {/* <CommonHeader /> */}
-      <LandingPage />
-    </div>
-  );
+  return <LandingPage />;
 };
 
 export default Page1;
