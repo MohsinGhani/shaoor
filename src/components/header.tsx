@@ -4,8 +4,8 @@ import { MenuFoldOutlined } from "@ant-design/icons";
 import { Drawer } from "antd";
 import type { DrawerProps } from "antd/es/drawer";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 
 const { Search } = Input;
 
