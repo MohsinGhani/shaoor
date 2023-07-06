@@ -1,11 +1,5 @@
-import {
-  FacebookOutlined,
-  InstagramOutlined,
-  TwitterOutlined,
-  YoutubeOutlined,
-} from "@ant-design/icons";
 import { Button, Divider, Input } from "antd";
-import { Footer } from "antd/es/layout/layout";
+
 import React from "react";
 
 const CommonFooter = () => {
