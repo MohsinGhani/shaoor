@@ -1,5 +1,6 @@
 import React from "react";
 import CommonHeader from "./header";
+import CommonFooter from "./footer";
 
 const LandingPage = () => {
   return (
@@ -50,6 +51,7 @@ const LandingPage = () => {
       <br />
       <br />
       <br />
+      <CommonFooter />
     </>
   );
 };
