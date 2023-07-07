@@ -9,11 +9,14 @@ const CommonFooter = () => {
         <div className="flex flex-col-reverse w-full items-center justify-between sm:flex-row  mt-[30px]  mb-[30px]">
           <div className="flex flex-col-reverse gap-[42px]  sx:flex-col sm:flex-row">
             <div className="items-end flex flex-col leading-9 text-[20px]">
-              <a className="cursor-pointer">تعارف</a>
-              <a className="cursor-pointer">رابتا</a>
-              <a className="cursor-pointer">مالی امداد</a>
-              <a className="cursor-pointer">رضاکار</a>
-              <a className="cursor-pointer"> پرائیویسی پالیسی </a>
+              <a className="cursor-pointer hover:underline ">تعارف</a>
+              <a className="cursor-pointer hover:underline">رابتا</a>
+              <a className="cursor-pointer hover:underline">مالی امداد</a>
+              <a className="cursor-pointer hover:underline">رضاکار</a>
+              <a className="cursor-pointer hover:underline">
+                {" "}
+                پرائیویسی پالیسی{" "}
+              </a>
             </div>
             <div className="leading-9 ">
               <div className="flex mt-[30px] sm:mt-[0px] w-full ">
