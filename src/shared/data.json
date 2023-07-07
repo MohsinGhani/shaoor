@@ -1,0 +1,145 @@
+{
+  "categories": [
+    { "id": "c1", "en": "Secularism", "ur": "سیکولرازم" },
+
+    { "id": "c2", "en": "God and Religion", "ur": "خدا اور مذہب" },
+
+    { "id": "c3", "en": "Capitalism", "ur": "کیپیٹلزم" },
+
+    { "id": "c4", "en": "liberalism", "ur": "لبرل ازم" },
+
+    { "id": "c5", "en": "Minority", "ur": "اقلیت" },
+
+    { "id": "c6", "en": "Modernity", "ur": "جدیدیت" },
+
+    { "id": "c7", "en": "Psychology ", "ur": "نفسیات " },
+
+    { "id": "c8", "en": "Philosophy", "ur": "فلسفہ" },
+
+    { "id": "c9", "en": "Biology", "ur": "حیاتیات" },
+
+    { "id": "c10", "en": "History", "ur": "تاریخ" },
+
+    { "id": "c11", "en": "Religious studies", "ur": "علوم دینیہ" },
+
+    { "id": "c12", "en": "Mental disorders", "ur": "عقلی اشکالات" },
+
+    { "id": "c13", "en": "God", "ur": "خدا" },
+
+    { "id": "c14", "en": "Mission", "ur": "رسالت" },
+
+    { "id": "c15", "en": "Hereafter", "ur": "آخرت" },
+
+    { "id": "c16", "en": "destiny", "ur": "تقدیر" },
+
+    { "id": "c17", "en": "Capitalism", "ur": " 1 کیپیٹلزم" },
+
+    { "id": "c18", "en": "liberalism", "ur": "1 لبرل ازم" },
+
+    { "id": "c19", "en": "Minority", "ur": "1 اقلیت" },
+
+    { "id": "c20", "en": "Modernity", "ur": "1 جدیدیت" },
+
+    { "id": "c21", "en": "Psychology ", "ur": "1 نفسیات " },
+
+    { "id": "c22", "en": "Philosophy", "ur": "1 فلسفہ" },
+
+    { "id": "c23", "en": "Biology", "ur": "1 حیاتیات" },
+
+    { "id": "c24", "en": "History", "ur": "1 تاریخ" },
+
+    { "id": "c25", "en": "Religious studies", "ur": "1 علوم دینیہ" },
+
+    { "id": "c26", "en": "Mental disorders", "ur": "1 عقلی اشکالات" },
+
+    { "id": "c27", "en": "God", "ur": "1 خدا" },
+
+    { "id": "c28", "en": "Mission", "ur": "1 رسالت" },
+
+    { "id": "c29", "en": "Hereafter", "ur": "1 آخرت" },
+
+    { "id": "c30", "en": "destiny", "ur": "1 تقدیر" }
+  ],
+
+  "news": [
+    {
+      "image": "https://shaoor.pk/wp-content/uploads/2021/10/244459797_151427757204439_8710384189793327105_n-630x630.jpg",
+
+      "title": "خاکے بنانے والا گستاخ رسول ﷺ بھیانک موت کے ساتھ اپنے انجام کو پہہنچا.",
+
+      "topics": ["جرم و سزا"],
+
+      "writer": "شعور"
+    },
+
+    {
+      "image": "https://shaoor.pk/wp-content/uploads/2021/08/EQ8yjTPGj7g-1120x630.jpg",
+
+      "title": "ماروی کے ساتھ چائے",
+
+      "topics": ["گھریلو تشدد بل"],
+
+      "writer": "شعور"
+    },
+
+    {
+      "image": "https://shaoor.pk/wp-content/uploads/2021/07/leg-630x630.jpeg",
+
+      "title": "!یہ قانون سازی نہیں بلکہ ہماری دینی و ملکی روایات پر حملہ ہے",
+
+      "topics": ["گھریلو تشدد بل", " قانون سازی"],
+
+      "writer": "عرفان حمزہ"
+    },
+
+    {
+      "image": "https://shaoor.pk/wp-content/uploads/2021/07/27-07-2021-630x630.jpg",
+
+      "title": "!یہ گھریلو تشدد کی روک تھام کا قانون نہیں ہے",
+
+      "topics": ["جرم و سزا", " تصویری پیغامات", " گھریلو تشدد بل"],
+
+      "writer": "کاشف جنید"
+    },
+
+    {
+      "image": "https://shaoor.pk/wp-content/uploads/2021/07/220390875_120082940338921_4311087419675290090_n-630x630.jpg",
+
+      "title": "’شعور‘ سوشل میڈیا نیٹ ورک کی جانب سے عید الاضحیٰ مبارک ہو۔",
+
+      "topics": [" تصویری پیغامات"],
+
+      "writer": "نعمان اویس"
+    },
+
+    {
+      "image": "https://shaoor.pk/wp-content/uploads/2021/07/23-07-2021-630x630.jpg",
+
+      "title": "سارا سال گوشت کھانا اور قربانی پر اعتراض کرنا کیا کھلا تضاد نہیں؟",
+
+      "topics": ["تصویری پیغامات"],
+
+      "writer": "قاسم ریحان سعد"
+    },
+
+    {
+      "image": "https://shaoor.pk/wp-content/uploads/2021/08/EQ8yjTPGj7g-1120x630.jpg",
+
+      "title": "ماروی کے ساتھ چائے",
+
+      "topics": ["گھریلو تشدد بل"],
+
+      "writer": "شعور"
+    },
+
+    {
+      "image": "https://shaoor.pk/wp-content/uploads/2021/07/27-07-2021-630x630.jpg",
+
+      "title": "!یہ گھریلو تشدد کی روک تھام کا قانون نہیں ہے",
+
+      "topics": ["جرم و سزا", " تصویری پیغامات", " گھریلو تشدد بل"],
+
+      "writer": "کاشف جنید"
+    }
+  ]
+}

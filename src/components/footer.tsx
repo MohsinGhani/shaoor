@@ -101,8 +101,8 @@ const CommonFooter = () => {
         </div>
         <Divider className="bg-white" />
         <div className="mt-[20px] mb-[40px]">
-          <p className="font-bold tracking-widest text-lg">
-            جملہ حق محفوظ ہے۔shaoor.pk کاپی رائٹ{" "}
+          <p className="font-bold  text-lg">
+            جملہ حق محفوظ ہے۔ shaoor.pk کاپی رائٹ
           </p>
         </div>
       </footer>

@@ -1,11 +1,11 @@
-import { Button, Input, Layout, Menu, Space } from "antd";
+import { Button, Input, Menu, Space } from "antd";
 import React, { useState } from "react";
 import { MenuFoldOutlined } from "@ant-design/icons";
 import { Drawer } from "antd";
 import type { DrawerProps } from "antd/es/drawer";
+import data from "../shared/data.json";
+
 import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
 
 const { Search } = Input;
 
@@ -19,68 +19,6 @@ const CommonHeader = () => {
     slidesToScroll: 1,
     variableWidth: true,
   };
-
-  const meriCatagory = [
-    { id: "c1", en: "Secularism", ur: "سیکولرازم" },
-
-    { id: "c2", en: "God and Religion", ur: "خدا اور مذہب" },
-
-    { id: "c3", en: "Capitalism", ur: "کیپیٹلزم" },
-
-    { id: "c4", en: "liberalism", ur: "لبرل ازم" },
-
-    { id: "c5", en: "Minority", ur: "اقلیت" },
-
-    { id: "c6", en: "Modernity", ur: "جدیدیت" },
-
-    { id: "c7", en: "Psychology ", ur: "نفسیات " },
-
-    { id: "c8", en: "Philosophy", ur: "فلسفہ" },
-
-    { id: "c9", en: "Biology", ur: "حیاتیات" },
-
-    { id: "c10", en: "History", ur: "تاریخ" },
-
-    { id: "c11", en: "Religious studies", ur: "علوم دینیہ" },
-
-    { id: "c12", en: "Mental disorders", ur: "عقلی اشکالات" },
-
-    { id: "c13", en: "God", ur: "خدا" },
-
-    { id: "c14", en: "Mission", ur: "رسالت" },
-
-    { id: "c15", en: "Hereafter", ur: "آخرت" },
-
-    { id: "c16", en: "destiny", ur: "تقدیر" },
-
-    { id: "c17", en: "Capitalism", ur: " 1 کیپیٹلزم" },
-
-    { id: "c18", en: "liberalism", ur: "1 لبرل ازم" },
-
-    { id: "c19", en: "Minority", ur: "1 اقلیت" },
-
-    { id: "c20", en: "Modernity", ur: "1 جدیدیت" },
-
-    { id: "c21", en: "Psychology ", ur: "1 نفسیات " },
-
-    { id: "c22", en: "Philosophy", ur: "1 فلسفہ" },
-
-    { id: "c23", en: "Biology", ur: "1 حیاتیات" },
-
-    { id: "c24", en: "History", ur: "1 تاریخ" },
-
-    { id: "c25", en: "Religious studies", ur: "1 علوم دینیہ" },
-
-    { id: "c26", en: "Mental disorders", ur: "1 عقلی اشکالات" },
-
-    { id: "c27", en: "God", ur: "1 خدا" },
-
-    { id: "c28", en: "Mission", ur: "1 رسالت" },
-
-    { id: "c29", en: "Hereafter", ur: "1 آخرت" },
-
-    { id: "c30", en: "destiny", ur: "1 تقدیر" },
-  ];
 
   const [open, setOpen] = useState(false);
   const [placement, setPlacement] = useState<DrawerProps["placement"]>("left");
@@ -221,7 +159,7 @@ const CommonHeader = () => {
       <div className="w-full flex justify-center">
         <div className="w-[65%] max-lg:w-[90%] mt-16">
           <Slider {...meriSettings} className="ml-4 mr-4">
-            {meriCatagory.map((catagory) => (
+            {(data?.categories || []).map((catagory) => (
               <div
                 className="font-bold border-b-4 rounded-none "
                 key={catagory?.id}
