@@ -153,7 +153,11 @@ const CommonHeader = () => {
       <div className="w-full flex justify-center">
         <div className="w-1/2  max-lg:w-[90%]  flex items-center justify-center mt-32">
           {" "}
-          <Search size="large" placeholder="What do you want to learn" />
+          <Search
+            className="text-end"
+            size="large"
+            placeholder="کیا سیکھنا چاہتے ہیں"
+          />
         </div>
       </div>
       <div className="w-full flex justify-center">

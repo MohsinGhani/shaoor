@@ -4,6 +4,7 @@ import "./globals.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import withTheme from "../../theme";
+
 // import { Amplify } from "aws-amplify";
 // import awsCognitoConfig from "../lib/awsCognitoConfig";
 import { Providers } from "@/redux/provider";
