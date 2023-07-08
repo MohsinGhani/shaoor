@@ -9,13 +9,18 @@ type IProps = {
 
 const CommonCord = ({ title, topic, writer, imageSrc }: IProps) => {
   return (
-    <div className="w-full">
+    // <div>1</div>
+    <div className="w-full p-4 ">
       <img className="w-[100%] h-44" src={imageSrc} />
 
       <div className="leading-8">
-        <p className="text-right  text-[20px]">{title}</p>
-        <p className="text-right  font-bold text-[20px]">{topic}</p>
-        <p className="text-right  text-[20px]">{writer}</p>
+        <p className="text-right  text-[20px] text-[#004C9B] font-bold">
+          {title}
+        </p>
+        <p className="text-right  font-bold text-[20px] text-[#454647]">
+          {topic}
+        </p>
+        <p className="text-right  text-[20px]  font-bold">{writer}</p>
       </div>
     </div>
   );
