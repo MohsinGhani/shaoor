@@ -18,7 +18,7 @@ const CommonCord = ({ title, topic, writer, imageSrc }: IProps) => {
         height={200}
       />
 
-      <div className="leading-8">
+      <div className="leading-8 max-sm:mt-[13px]">
         <p className="text-right  text-[20px] text-[#004C9B] font-bold ">
           {title}
         </p>
