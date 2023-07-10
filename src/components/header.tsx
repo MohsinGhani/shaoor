@@ -156,7 +156,7 @@ const CommonHeader = () => {
           <Search
             className="text-end"
             size="large"
-            placeholder="کیا سیکھنا چاہتے ہیں"
+            placeholder="کیا سیکھنا چاہتے ہیں؟"
           />
         </div>
       </div>

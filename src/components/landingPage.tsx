@@ -4,6 +4,7 @@ import CommonFooter from "./footer";
 
 import NewsSection from "./newsSection";
 import SeeSection from "./seeSection";
+import LearningSection from "./learningSection";
 
 const LandingPage = () => {
   return (
@@ -11,6 +12,7 @@ const LandingPage = () => {
       <CommonHeader />
       <NewsSection />
       <SeeSection />
+      <LearningSection />
       <CommonFooter />
     </>
   );
