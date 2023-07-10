@@ -1,6 +1,6 @@
 import { Button, Input, Menu, Space } from "antd";
 import React, { useState } from "react";
-import { MenuFoldOutlined } from "@ant-design/icons";
+import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
 import { Drawer } from "antd";
 import type { DrawerProps } from "antd/es/drawer";
 import data from "../shared/data.json";
@@ -37,7 +37,7 @@ const CommonHeader = () => {
         <nav className=" max-w-[1280px] flex justify-between items-center mx-auto max-lg:mt-2 max-lg:mb-2">
           <div className="flex">
             <Space>
-              <MenuFoldOutlined
+              <MenuUnfoldOutlined
                 rev="ege"
                 className="text-white text-4xl w-6 h-6 text-white-500 lg:hidden mr-6 items-center flex"
                 onClick={showDrawer}

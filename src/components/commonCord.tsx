@@ -1,8 +1,10 @@
 import React from "react";
 import Image from "next/image";
+import CardFooter from "./cardFooter";
+
 type IProps = {
   title: string;
-  topic: string;
+  topic: string[];
   writer: string;
   imageSrc: string;
 };
@@ -18,17 +20,7 @@ const CommonCord = ({ title, topic, writer, imageSrc }: IProps) => {
         height={200}
       />
 
-      <div className="leading-8 max-sm:mt-[13px]">
-        <p className="text-right  text-[20px] text-[#004C9B] font-bold ">
-          {title}
-        </p>
-        <p className="text-right  font-bold text-[20px] text-[#1b1b1b]">
-          {topic}
-        </p>
-        <p className="text-right  text-[17px]  font-bold text-[#929292]">
-          {writer}
-        </p>
-      </div>
+      <CardFooter title={title} topic={topic} writer={writer} />
     </div>
   );
 };

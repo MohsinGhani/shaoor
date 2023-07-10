@@ -6,6 +6,7 @@ import Slider from "react-slick";
 import data from "../shared/data.json";
 import { Grid } from "antd";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
+import CardFooter from "./cardFooter";
 const LearningSection = () => {
   const meriSettings = {
     slidesToShow: 2,
@@ -63,7 +64,7 @@ const LearningSection = () => {
               <CommonCord
                 imageSrc={news.image}
                 title={news.title}
-                topic={news.topics[0]}
+                topic={news.topics}
                 writer={news.writer}
               />
             ))}
@@ -75,7 +76,7 @@ const LearningSection = () => {
                 <CommonCord
                   imageSrc={news.image}
                   title={news.title}
-                  topic={news.topics[0]}
+                  topic={news.topics}
                   writer={news.writer}
                 />
               ))}

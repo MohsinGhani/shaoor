@@ -56,14 +56,14 @@ const NewsSection = () => {
           <Slider
             {...meriSettings}
             className="  max-md:h-[400px]  "
-            prevArrow={<CustomPrevArrow />}
-            nextArrow={<CustomNextArrow />}
+            prevArrow={<CustomPrevArrow className="font-bold bg-[#751d1d]" />}
+            nextArrow={<CustomNextArrow className="font-bold bg-[#d12e2e]" />}
           >
             {(data?.news || []).map((news) => (
               <CommonCord
                 imageSrc={news.image}
                 title={news.title}
-                topic={news.topics[0]}
+                topic={news.topics}
                 writer={news.writer}
               />
             ))}
@@ -75,7 +75,7 @@ const NewsSection = () => {
                 <CommonCord
                   imageSrc={news.image}
                   title={news.title}
-                  topic={news.topics[0]}
+                  topic={news.topics}
                   writer={news.writer}
                 />
               ))}
