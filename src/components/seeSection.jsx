@@ -22,7 +22,7 @@ const SeeSection = () => {
   };
   const CustomPrevArrow = ({ onClick }) => (
     <button
-      className="slider-arrow slider-arrow-next absolute bottom-2 left-6 bg-[#eba21a] rounded-full p-2 border-none z-10"
+      className="slider-arrow slider-arrow-next absolute bottom-2 left-6 bg-[#eba21a] rounded-[100%] p-2 border-none z-10 text-black"
       onClick={() => {
         console.log("clicking");
         onClick();
@@ -34,7 +34,7 @@ const SeeSection = () => {
 
   const CustomNextArrow = ({ onClick }) => (
     <button
-      className="slider-arrow slider-arrow-prev absolute right-4 bottom-2 border-none  bg-[#eba21a] rounded-full p-2"
+      className="slider-arrow slider-arrow-prev absolute right-4 bottom-2 border-none  bg-[#eba21a] rounded-[100%] p-2 text-black"
       onClick={onClick}
     >
       <RightOutlined rev={"edg"} />
