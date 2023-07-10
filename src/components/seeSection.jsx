@@ -1,12 +1,11 @@
 import React from "react";
 import Heading from "./heading";
-import CommonMainCard from "./commonMainCard";
 import CommonCord from "./commonCord";
 import data from "../shared/data.json";
 import Slider from "react-slick";
 import { Grid } from "antd";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
-const NewsSection = () => {
+const SeeSection = () => {
   const meriSettings = {
     slidesToShow: 2,
     slidesToScroll: 1,
@@ -21,7 +20,7 @@ const NewsSection = () => {
       },
     ],
   };
-  const CustomPrevArrow = ({ onClick }: any) => (
+  const CustomPrevArrow = ({ onClick }) => (
     <button
       className="slider-arrow slider-arrow-next absolute bottom-2 left-6 bg-[#eba21a] rounded-full p-2 border-none z-10"
       onClick={() => {
@@ -33,7 +32,7 @@ const NewsSection = () => {
     </button>
   );
 
-  const CustomNextArrow = ({ onClick }: any) => (
+  const CustomNextArrow = ({ onClick }) => (
     <button
       className="slider-arrow slider-arrow-prev absolute right-4 bottom-2 border-none  bg-[#eba21a] rounded-full p-2"
       onClick={onClick}
@@ -45,13 +44,10 @@ const NewsSection = () => {
   const { useBreakpoint } = Grid;
 
   const screen = useBreakpoint();
-
   return (
-    <>
-      <div className="max-w-[1280px] mx-auto  ">
-        <Heading title="تازه ترین" />
-        {/* flex justify-center max-md:flex-col-reverse */}
-
+    <div className="w-full bg-[#e2ecf3]">
+      <div className="max-w-[1280px] mx-auto ">
+        <Heading title="دیکھیں" />
         {!screen.md ? (
           <Slider
             {...meriSettings}
@@ -83,8 +79,8 @@ const NewsSection = () => {
           </div>
         )}
       </div>
-    </>
+    </div>
   );
 };
 
-export default NewsSection;
+export default SeeSection;
