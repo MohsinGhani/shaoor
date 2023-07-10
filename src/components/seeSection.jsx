@@ -45,13 +45,13 @@ const SeeSection = () => {
 
   const screen = useBreakpoint();
   return (
-    <div className="w-full bg-[#e2ecf3]">
+    <div className="w-full bg-[#e2ebf1]">
       <div className="max-w-[1280px] mx-auto ">
         <Heading title="دیکھیں" />
         {!screen.md ? (
           <Slider
             {...meriSettings}
-            className="max-md:h-[400px] "
+            className="max-md:h-[400px]"
             prevArrow={<CustomPrevArrow />}
             nextArrow={<CustomNextArrow />}
           >
@@ -65,7 +65,7 @@ const SeeSection = () => {
             ))}
           </Slider>
         ) : (
-          <div className="flex justify-center max-md:flex-col-reverse ">
+          <div className="flex justify-center max-md:flex-col-reverse">
             <div className="max-w-[1280px] sm:grid grid-rows-2 grid-flow-col flex-wrap ">
               {(data?.news || []).map((news) => (
                 <CommonCord
