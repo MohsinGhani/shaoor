@@ -48,7 +48,7 @@ const NewsSection = () => {
 
   return (
     <>
-      <div className="max-w-[1280px] mx-auto  ">
+      <div className="max-w-[1280px] mx-auto ">
         <Heading title="تازه ترین" />
         {/* flex justify-center max-md:flex-col-reverse */}
 
@@ -69,7 +69,7 @@ const NewsSection = () => {
             ))}
           </Slider>
         ) : (
-          <div className="flex justify-center max-md:flex-col-reverse">
+          <div className="flex justify-center max-md:flex-col-reverse  ">
             <div className="gap-4 max-w-[1280px] sm:grid grid-rows-2 grid-flow-col flex-wrap max-sm:pl-3 max-sm:pr-3">
               {(data?.news || []).map((news) => (
                 <CommonCord

@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 type IProps = {
   title: string;
   topic: string;
@@ -9,18 +9,23 @@ type IProps = {
 
 const CommonCord = ({ title, topic, writer, imageSrc }: IProps) => {
   return (
-    // <div>1</div>
-    <div className="w-full p-4 object-contain">
-      <img className="w-full  h-44" src={imageSrc} />
+    <div className="w-full p-4 ">
+      <Image
+        className="w-full  h-44  object-cover"
+        alt=""
+        src={imageSrc}
+        width={500}
+        height={200}
+      />
 
       <div className="leading-8">
-        <p className="text-right  text-[20px] text-[#004C9B] font-bold">
+        <p className="text-right  text-[20px] text-[#004C9B] font-bold leading-6">
           {title}
         </p>
-        <p className="text-right  font-bold text-[20px] text-[#454647]">
+        <p className="text-right  font-bold text-[20px] text-[#1b1b1b]">
           {topic}
         </p>
-        <p className="text-right  text-[20px]  font-bold text-[#ccc]">
+        <p className="text-right  text-[17px]  font-bold text-[#929292]">
           {writer}
         </p>
       </div>
