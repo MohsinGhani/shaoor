@@ -9,7 +9,7 @@ type IProps = {
 
 const CommonCord = ({ title, topic, writer, imageSrc }: IProps) => {
   return (
-    <div className="w-full p-4 ">
+    <div className="w-full pl-[16px]  pr-[16px] ">
       <Image
         className="w-full  h-44  object-cover"
         alt=""

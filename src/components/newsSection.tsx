@@ -23,7 +23,7 @@ const NewsSection = () => {
   };
   const CustomPrevArrow = ({ onClick }: any) => (
     <button
-      className="slider-arrow slider-arrow-next absolute bottom-2 left-6 bg-[#eba21a] rounded-[100%] p-2 border-none z-10 text-black"
+      className="slider-arrow slider-arrow-next absolute bottom-2 left-4 bg-[#eba21a] rounded-[100%] p-2 border-none z-10 text-black"
       onClick={() => {
         console.log("clicking");
         onClick();
@@ -70,7 +70,7 @@ const NewsSection = () => {
           </Slider>
         ) : (
           <div className="flex justify-center max-md:flex-col-reverse  ">
-            <div className="gap-4 max-w-[1280px] sm:grid grid-rows-2 grid-flow-col flex-wrap max-sm:pl-3 max-sm:pr-3">
+            <div className=" max-w-[1280px] sm:grid grid-rows-2 grid-flow-col flex-wrap ">
               {(data?.news || []).map((news) => (
                 <CommonCord
                   imageSrc={news.image}
