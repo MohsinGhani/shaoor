@@ -58,7 +58,7 @@ const ListenSection = () => {
       {/* flex justify-center max-md:flex-col-reverse */}
       <Slider
         {...meriSettings}
-        className="  max-md:h-[250px] mb-[80px]"
+        className="  max-md:h-[180px] mb-[80px]"
         prevArrow={<CustomPrevArrow />}
         nextArrow={<CustomNextArrow />}
       >
