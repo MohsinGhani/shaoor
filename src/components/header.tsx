@@ -170,7 +170,7 @@ const CommonHeader = () => {
               >
                 <Button
                   type="ghost"
-                  className="text-white px-5 hover:bg-blue-800 h-9  text-base font-sans-serif hover:border-b-orange-500 active:bg-blue-800 bg-transparent text-center  border-b-4 rounded-none"
+                  className="text-white px-5 hover:bg-blue-800 h-9  text-base font-sans-serif cursor-pointer hover:border-b-orange-500 active:bg-blue-800 bg-transparent text-center  border-b-4 rounded-none"
                 >
                   {catagory.ur}
                 </Button>

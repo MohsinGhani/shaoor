@@ -6,6 +6,9 @@ import NewsSection from "./newsSection";
 import SeeSection from "./seeSection";
 import LearningSection from "./learningSection";
 import ListenSection from "./listenSection";
+import Infographics from "./infographics";
+import Course from "./course";
+import Books from "./books";
 
 const LandingPage = () => {
   return (
@@ -15,6 +18,9 @@ const LandingPage = () => {
       <SeeSection />
       <LearningSection />
       <ListenSection />
+      <Infographics />
+      {/* <Course />
+      <Books /> */}
       <CommonFooter />
     </>
   );

@@ -1,12 +1,11 @@
 import React from "react";
 import Heading from "./heading";
-
-import CommonCord from "./commonCord";
-import data from "../shared/data.json";
-import Slider from "react-slick";
-import { Grid } from "antd";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
-const NewsSection = () => {
+import CommonCord from "./commonCord";
+import Slider from "react-slick";
+import data from "../shared/data.json";
+import { Grid } from "antd";
+const Course = () => {
   const meriSettings = {
     slidesToShow: 2,
     slidesToScroll: 1,
@@ -16,20 +15,6 @@ const NewsSection = () => {
         breakpoint: 426,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 769,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 1025,
-        settings: {
-          slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
@@ -49,7 +34,7 @@ const NewsSection = () => {
 
   const CustomNextArrow = ({ onClick }: any) => (
     <button
-      className="slider-arrow slider-arrow-prev absolute right-4 bottom-2  cursor-pointer border-none rounded-[100%]  bg-[#eba21a]  p-2 text-black"
+      className="slider-arrow slider-arrow-prev absolute right-4 bottom-2 cursor-pointer border-none rounded-[100%]  bg-[#eba21a]  p-2 text-black"
       onClick={onClick}
     >
       <RightOutlined rev={"edg"} />
@@ -59,12 +44,10 @@ const NewsSection = () => {
   const { useBreakpoint } = Grid;
 
   const screen = useBreakpoint();
-
   return (
     <>
       <div className="max-w-[1280px] mx-auto ">
-        <Heading title="تازه ترین" />
-
+        <Heading title="کورسز " />
         {!screen.md ? (
           <Slider
             {...meriSettings}
@@ -104,4 +87,4 @@ const NewsSection = () => {
   );
 };
 
-export default NewsSection;
+export default Course;
