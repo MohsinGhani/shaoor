@@ -19,8 +19,8 @@ const LandingPage = () => {
       <LearningSection />
       <ListenSection />
       <Infographics />
-      {/* <Course />
-      <Books /> */}
+      <Course />
+      <Books />
       <CommonFooter />
     </>
   );

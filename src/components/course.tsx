@@ -8,9 +8,16 @@ import { Grid } from "antd";
 const Course = () => {
   const meriSettings = {
     slidesToShow: 2,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     infinite: true,
     responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
       {
         breakpoint: 426,
         settings: {
@@ -22,7 +29,7 @@ const Course = () => {
   };
   const CustomPrevArrow = ({ onClick }: any) => (
     <button
-      className="slider-arrow slider-arrow-next absolute bottom-2 left-4 cursor-pointer bg-[#eba21a] rounded-[100%] p-2 border-none z-10 text-black"
+      className="slider-arrow slider-arrow-next absolute bottom-2 left-4 cursor-pointer bg-[#eba21a] max-lg:bottom-[-84px] rounded-[100%] p-2 border-none z-10 text-black"
       onClick={() => {
         console.log("clicking");
         onClick();
@@ -34,7 +41,7 @@ const Course = () => {
 
   const CustomNextArrow = ({ onClick }: any) => (
     <button
-      className="slider-arrow slider-arrow-prev absolute right-4 bottom-2 cursor-pointer border-none rounded-[100%]  bg-[#eba21a]  p-2 text-black"
+      className="slider-arrow slider-arrow-prev absolute right-4 bottom-2 cursor-pointer border-none rounded-[100%]  max-lg:bottom-[-84px] bg-[#eba21a]  p-2 text-black"
       onClick={onClick}
     >
       <RightOutlined rev={"edg"} />
@@ -48,35 +55,38 @@ const Course = () => {
     <>
       <div className="max-w-[1280px] mx-auto ">
         <Heading title="کورسز " />
+
         {!screen.md ? (
-          <Slider
-            {...meriSettings}
-            className="  max-md:h-[400px]  "
-            prevArrow={<CustomPrevArrow className="font-bold bg-[#751d1d]" />}
-            nextArrow={<CustomNextArrow className="font-bold bg-[#d12e2e]" />}
-          >
-            {(data?.news || []).map((news) => (
-              <CommonCord
-                cardHeight=""
-                className=""
-                imageSrc={news.image}
-                title={news.title}
-                topic={news.topics}
-                writer={news.writer}
-              />
-            ))}
-          </Slider>
+          <div className="h-[501px]">
+            <Slider
+              {...meriSettings}
+              className="  max-md:h-[400px]   "
+              prevArrow={<CustomPrevArrow className="font-bold bg-[#751d1d]" />}
+              nextArrow={<CustomNextArrow className="font-bold bg-[#d12e2e]" />}
+            >
+              {(data?.course || []).map((course) => (
+                <CommonCord
+                  cardHeight="max-sm: h-[425px]"
+                  className="h-[69%]"
+                  imageSrc={course.image}
+                  title={course.title}
+                  topic={course.topics}
+                  writer={course.writer}
+                />
+              ))}
+            </Slider>
+          </div>
         ) : (
-          <div className="flex justify-center max-md:flex-col-reverse  ">
-            <div className=" max-w-[1280px] sm:grid grid-rows-2 grid-flow-col flex-wrap ">
-              {(data?.news || []).map((news) => (
+          <div className="flex justify-center max-md:flex-col-reverse  h-[570px]">
+            <div className=" max-w-[1280px] sm:grid sm:w-full grid-rows-1 grid-flow-col flex-wrap ">
+              {(data?.course || []).map((course) => (
                 <CommonCord
                   cardHeight=""
-                  className=""
-                  imageSrc={news.image}
-                  title={news.title}
-                  topic={news.topics}
-                  writer={news.writer}
+                  className="h-[69%]"
+                  imageSrc={course.image}
+                  title={course.title}
+                  topic={course.topics}
+                  writer={course.writer}
                 />
               ))}
             </div>

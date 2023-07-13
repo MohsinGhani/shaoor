@@ -65,7 +65,7 @@ const Infographics = () => {
         <Heading title="انفوگرافکس" />
 
         {!screen.md ? (
-          <div className="h-[701px]">
+          <div className="h-[657px]">
             <Slider
               {...meriSettings}
               className="max-md:h-[400px]"
@@ -85,12 +85,12 @@ const Infographics = () => {
             </Slider>
           </div>
         ) : (
-          <div className="flex justify-center max-md:flex-col-reverse  h-[701px]">
+          <div className="flex justify-center max-md:flex-col-reverse  h-[548px]">
             <div className=" max-w-[1280px] sm:grid grid-rows-1 grid-flow-col flex-wrap">
               {(data?.infograpics || []).map((infograpics) => (
                 <CommonCord
                   cardHeight=""
-                  className="h-[57%]"
+                  className="h-[67%]"
                   imageSrc={infograpics.image}
                   title={infograpics.title}
                   topic={infograpics.topics}

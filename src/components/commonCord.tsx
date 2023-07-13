@@ -20,7 +20,7 @@ const CommonCord = ({
   cardHeight,
 }: IProps) => {
   return (
-    <div className={`w-full pl-[16px]  pr-[16px] ${cardHeight}`}>
+    <div className={` pl-[16px]  pr-[16px] ${cardHeight}`}>
       <Image
         // {`w-full h-44  object-cove${className}`}
         className={`w-full h-44  object-cover ${className}`}
