@@ -84,8 +84,10 @@ const CommonFooter = () => {
               </p>
             </div>
             <div className="flex  flex-row-reverse items-center">
-              <p className="ml-4 font-bold   text-xl">پتہ</p>
-              <p className=" font-bold text-base font-sans-serif ">
+              <p className="ml-4 font-bold   text-xl max-[768px]:ml-[14px] ">
+                پتہ
+              </p>
+              <p className=" font-bold text-base font-sans-serif max-[768px]:text-[14px] ">
                 {" "}
                 27 بلاک 7 یا 8 دارالامان سوسائٹی پیچ شارع فیصل
               </p>

@@ -29,7 +29,7 @@ const Course = () => {
   };
   const CustomPrevArrow = ({ onClick }: any) => (
     <button
-      className="slider-arrow slider-arrow-next absolute bottom-2 left-4 cursor-pointer bg-[#eba21a] max-lg:bottom-[-84px] rounded-[100%] p-2 border-none z-10 text-black"
+      className="slider-arrow slider-arrow-next absolute bottom-2 left-4 cursor-pointer bg-[#eba21a] max-lg:bottom-[-112px] rounded-[100%] p-2 border-none z-10 text-black"
       onClick={() => {
         console.log("clicking");
         onClick();
@@ -41,7 +41,7 @@ const Course = () => {
 
   const CustomNextArrow = ({ onClick }: any) => (
     <button
-      className="slider-arrow slider-arrow-prev absolute right-4 bottom-2 cursor-pointer border-none rounded-[100%]  max-lg:bottom-[-84px] bg-[#eba21a]  p-2 text-black"
+      className="slider-arrow slider-arrow-prev absolute right-4 bottom-2 cursor-pointer border-none rounded-[100%]  max-lg:bottom-[-112px] bg-[#eba21a]  p-2 text-black"
       onClick={onClick}
     >
       <RightOutlined rev={"edg"} />
@@ -57,7 +57,7 @@ const Course = () => {
         <Heading title="کورسز " />
 
         {!screen.md ? (
-          <div className="h-[501px]">
+          <div className="h-[521px]">
             <Slider
               {...meriSettings}
               className="  max-md:h-[400px]   "
@@ -66,7 +66,7 @@ const Course = () => {
             >
               {(data?.course || []).map((course) => (
                 <CommonCord
-                  cardHeight="max-sm: h-[425px]"
+                  cardHeight="max-sm: h-[470px]"
                   className="h-[69%]"
                   imageSrc={course.image}
                   title={course.title}
@@ -82,7 +82,7 @@ const Course = () => {
               {(data?.course || []).map((course) => (
                 <CommonCord
                   cardHeight=""
-                  className="h-[69%]"
+                  className="h-[65%]"
                   imageSrc={course.image}
                   title={course.title}
                   topic={course.topics}

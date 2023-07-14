@@ -37,7 +37,7 @@ const Books = () => {
   };
   const CustomPrevArrow = ({ onClick }: any) => (
     <button
-      className="slider-arrow slider-arrow-next absolute bottom-[50px] cursor-pointer text-[#5f5f5f] max-lg:left-4  max-lg:bottom-[-336px] max-lg:p-2 left-[-4rem]   rounded-[100%] p-2 border-none z-10 text-[45px] bg-[#FFFFFF] max-lg:text-[12px] max-lg:text-black max-lg:bg-[#eba21a] "
+      className="slider-arrow slider-arrow-next absolute bottom-[290px] cursor-pointer text-[#5f5f5f] max-lg:left-4  max-lg:bottom-[-400px] max-lg:p-2 left-[-4rem]   rounded-[100%] p-2 border-none z-10 text-[45px] bg-[#FFFFFF] max-lg:text-[12px] max-lg:text-black max-lg:bg-[#eba21a] "
       onClick={() => {
         console.log("clicking");
         onClick();
@@ -49,7 +49,7 @@ const Books = () => {
 
   const CustomNextArrow = ({ onClick }: any) => (
     <button
-      className="slider-arrow slider-arrow-prev absolute right-[-4rem] max-lg:right-4  cursor-pointer max-lg:bottom-[-336px] max-lg:p-2 bottom-[50px]  border-none rounded-[100%]    p-2  text-[#5f5f5f] text-[45px] max-lg:text-[12px] bg-[#FFFFFF] max-lg:text-black max-lg:bg-[#eba21a] "
+      className="slider-arrow slider-arrow-prev absolute right-[-4rem] max-lg:right-4  cursor-pointer max-lg:bottom-[-400px] max-lg:p-2 bottom-[290px]  border-none rounded-[100%]    p-2  text-[#5f5f5f] text-[45px] max-lg:text-[12px] bg-[#FFFFFF] max-lg:text-black max-lg:bg-[#eba21a] "
       onClick={onClick}
     >
       <RightOutlined rev={"edg"} />
@@ -62,7 +62,7 @@ const Books = () => {
   return (
     <div className="max-w-[1280px] mx-auto ">
       <Heading title="کتابیں " />
-      <div className=" h-[541px]">
+      <div className=" h-[641px]">
         <Slider
           {...meriSettings}
           className="  max-md:h-[180px] mb-[80px]"
@@ -73,7 +73,7 @@ const Books = () => {
             <div className="w-[300px] ">
               <CommonCord
                 cardHeight=""
-                className="w-[60%] h-[24rem] mx-auto "
+                className="!w-[60%] h-[24rem] mx-auto max-[1025px]:!w-[50%] max-[769px]:!w-[63%] max-sm:!w[60%]"
                 imageSrc={books.image}
                 title={books.title}
                 topic={books.topics}
