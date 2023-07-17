@@ -1,7 +1,10 @@
+"use client";
+
 import { Button, Input, Menu, Space } from "antd";
 import React, { useState } from "react";
 import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
 import { Drawer } from "antd";
+import { useRouter } from "next/navigation";
 import type { DrawerProps } from "antd/es/drawer";
 import data from "../shared/data.json";
 
@@ -10,6 +13,7 @@ import Slider from "react-slick";
 const { Search } = Input;
 
 const CommonHeader = () => {
+  const router = useRouter();
   const meriSettings = {
     className: "slider variable-width",
 
@@ -93,42 +97,63 @@ const CommonHeader = () => {
           <div className="flex">
             <div className="hidden lg:flex">
               <Button
+                onClick={() => {
+                  router.push("/muheem");
+                }}
                 type="ghost"
                 className="text-white   border-b-4 rounded-none text-lg font-sans-serif hover:border-b-orange-500 hover:bg-blue-800 w-2/3 h-63 md:h-auto lg:h-16 "
               >
                 موہیم
               </Button>
               <Button
+                onClick={() => {
+                  router.push("/course");
+                }}
                 className="text-white  border-b-4 rounded-none text-lg  font-sans-serif hover:border-b-orange-500  hover:bg-blue-800  w-2/3 h-63 md:h-auto lg:h-16"
                 type="ghost"
               >
                 کورس
               </Button>
               <Button
+                onClick={() => {
+                  router.push("/infographics");
+                }}
                 className="text-white  border-b-4 rounded-none text-lg  font-sans-serif hover:border-b-orange-500  hover:bg-blue-800  w-2/3 h-63 md:h-auto lg:h-16"
                 type="ghost"
               >
                 انفوگرافکس
               </Button>
               <Button
+                onClick={() => {
+                  router.push("/listen");
+                }}
                 className="text-white  border-b-4 rounded-none text-lg  font-sans-serif  hover:border-b-orange-500  hover:bg-blue-800  w-2/3 h-63 md:h-auto lg:h-16"
                 type="ghost"
               >
                 سنین
               </Button>
               <Button
+                onClick={() => {
+                  router.push("/seeing");
+                }}
                 className="text-white  border-b-4 rounded-none text-lg  font-sans-serif hover:border-b-orange-500  hover:bg-blue-800  w-2/3 h-63 md:h-auto lg:h-16"
                 type="ghost"
               >
                 دیکھیں
               </Button>
               <Button
+                onClick={() => {
+                  router.push("/learn");
+                }}
                 className="text-white  border-b-4 rounded-none text-lg  font-sans-serif  hover:border-b-orange-500  hover:bg-blue-800  w-2/3 h-63 md:h-auto lg:h-16 "
                 type="ghost"
               >
                 پڑھیں
               </Button>
               <Button
+                onClick={() => {
+                  router.push("/magazine");
+                }}
                 className=" text-white   border-b-4 rounded-none text-lg  font-sans-serif hover:border-b-orange-500  hover:bg-blue-800  w-2/3 h-63 md:h-auto lg:h-16"
                 type="ghost"
               >

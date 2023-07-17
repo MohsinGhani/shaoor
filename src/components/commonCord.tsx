@@ -29,8 +29,9 @@ const CommonCord = ({
         width={500}
         height={0}
       />
-
-      <CardFooter title={title} topic={topic} writer={writer} />
+      <div>
+        <CardFooter title={title} topic={topic} writer={writer} />
+      </div>
     </div>
   );
 };
