@@ -84,11 +84,11 @@ const Pakistan = () => {
             ))}
           </Slider>
         ) : (
-          <div className="flex justify-center max-md:flex-col-reverse  ">
-            <div className=" max-w-[1280px] sm:grid grid-rows-2 grid-flow-col flex-wrap ">
+          <div className="flex   justify-end max-md:flex-col-reverse !h-[500px]">
+            <div className=" max-w-[1280px] sm:grid grid-rows-2 grid-flow-col flex-wrap">
               {(data?.islamicCountry || []).map((islamicCountry) => (
                 <CommonCord
-                  cardHeight="w-[224px]"
+                  cardHeight=""
                   className="h-[8rem]"
                   imageSrc={islamicCountry.image}
                   title={islamicCountry.title}

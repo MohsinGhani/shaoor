@@ -1,12 +1,12 @@
 import React from "react";
-import Heading from "../heading";
+import Heading from "../components/heading";
 
-import CommonCord from "../commonCord";
-import data from "../../shared/data.json";
+import CommonCord from "../components/commonCord";
+import data from "../shared/data.json";
 import Slider from "react-slick";
 import { Grid } from "antd";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
-const TopSection = () => {
+const AlimEislam = () => {
   const meriSettings = {
     slidesToShow: 2,
     slidesToScroll: 1,
@@ -62,36 +62,36 @@ const TopSection = () => {
 
   return (
     <>
-      <div className="max-w-[1280px] mx-auto">
+      <div className="max-w-[1280px] mx-auto ">
         {!screen.md ? (
           <Slider
             {...meriSettings}
-            className="max-md:h-[400px]"
+            className="  max-md:h-[400px]  "
             prevArrow={<CustomPrevArrow className="font-bold bg-[#751d1d]" />}
             nextArrow={<CustomNextArrow className="font-bold bg-[#d12e2e]" />}
           >
-            {(data?.topSection || []).map((topSection) => (
+            {(data?.pakistan || []).map((pakistan) => (
               <CommonCord
                 cardHeight=""
                 className=""
-                imageSrc={topSection.image}
-                title={topSection.title}
-                topic={topSection.topics}
-                writer={topSection.writer}
+                imageSrc={pakistan.image}
+                title={pakistan.title}
+                topic={pakistan.topics}
+                writer={pakistan.writer}
               />
             ))}
           </Slider>
         ) : (
-          <div className="flex   justify-end max-md:flex-col-reverse !h-[260px]">
-            <div className=" max-w-[1280px] sm:grid grid-rows-1 grid-flow-col flex-wrap">
-              {(data?.topSection || []).map((topSection) => (
+          <div className="flex flex-col">
+            <div className="flex flex-col ">
+              {(data?.blogs || []).map((blogs: any) => (
                 <CommonCord
-                  cardHeight=""
-                  className="h-[8rem]"
-                  imageSrc={topSection.image}
-                  title={topSection.title}
-                  topic={topSection.topics}
-                  writer={topSection.writer}
+                  cardHeight="w-full h-[250px] flex  flex-row-reverse"
+                  className="!h-[170px] !w-[33%] ml-[5px]"
+                  imageSrc={blogs.image}
+                  title={blogs.title}
+                  topic={blogs.topics}
+                  writer={blogs.writer}
                 />
               ))}
             </div>
@@ -102,4 +102,4 @@ const TopSection = () => {
   );
 };
 
-export default TopSection;
+export default AlimEislam;

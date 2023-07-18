@@ -1,28 +1,25 @@
-"use client";
-import CommonCord from "@/components/commonCord";
-import CommonFooter from "@/components/footer";
-import CommonHeader from "@/components/header";
-import Heading from "@/components/heading";
-import { Button, Divider, Input } from "antd";
-import { useRouter } from "next/navigation";
-import data from "../../shared/data.json";
-
+import { Button, Divider, Input, Tabs } from "antd";
 import React from "react";
-import BlogSide from "@/components/blogs/blogSide";
-
-import MagazineC from "@/components/magazineCard/magazineC";
-import TopSection from "@/components/magazineCard/topSection";
+import BlogSide from "../components/blogs/blogSide";
+import CommonCord from "../components/commonCord";
+import TopSection from "../components/magazineCard/topSection";
+import MagazineC from "../components/magazineCard/magazineC";
+import Heading from "../components/heading";
+// import Search from "antd/es/transfer/search";
+import data from "../shared/data.json";
+import { useRouter } from "next/navigation";
+import CommonHeader from "@/components/header";
+import CommonFooter from "@/components/footer";
 const { Search } = Input;
-
-const Magazine = () => {
+const Islam = () => {
   const router = useRouter();
   return (
     <>
-      <CommonHeader />
+      {/* <CommonHeader /> */}
       <div className="max-w-[1280px] mx-auto">
-        <Heading title="ہیڈ لائنز" />
+        {/* <Heading title="ہیڈ لائنز" /> */}
         <div className="">
-          <div className="flex justify-between  max-lg:flex-col">
+          {/* <div className="flex justify-between  max-lg:flex-col">
             <div className="w-1/3  max-lg:w-[90%]  flex items-center justify-center ">
               {" "}
               <Search size="large" placeholder="سرچ" className="text-end" />
@@ -42,7 +39,7 @@ const Magazine = () => {
               </Button>
               <Button
                 onClick={() => {
-                  router.push("/tabs");
+                  router.push("/Islam");
                 }}
                 className=" border-none text-[#adadadcc] text-[17px] justify-between"
               >
@@ -58,13 +55,13 @@ const Magazine = () => {
                 بلاگز
               </Button>
             </div>
-          </div>
+          </div> */}
           <Divider />
 
           <div className="flex flex-row justify-between">
-            <div className="w-[30%] bg-[#ffffff] overflow-scroll max-lg:hidden h-[3125px]">
+            {/* <div className="w-[30%] bg-[#ffffff] overflow-scroll max-lg:hidden h-[3125px]">
               <BlogSide />
-            </div>
+            </div> */}
 
             <div className="w-[70%] bg-[#ffffff] max-lg:w-full ">
               <div className="flex   justify-end max-md:flex-col-reverse !h-[380px] max-lg:!h-[485px]">
@@ -81,15 +78,15 @@ const Magazine = () => {
                   ))}
                 </div>
               </div>
-              <TopSection />
-              <MagazineC />
+              {/* <TopSection /> */}
+              {/* <MagazineC /> */}
             </div>
           </div>
         </div>
       </div>
-      <CommonFooter />
+      {/* <CommonFooter /> */}
     </>
   );
 };
 
-export default Magazine;
+export default Islam;

@@ -59,7 +59,14 @@ const CommonHeader = () => {
                 mode="inline"
               >
                 <Menu.Item key="1">
-                  <span className="text-xl font-medium  ">میگزین</span>
+                  <span
+                    onClick={() => {
+                      router.push("/magazine");
+                    }}
+                    className="text-xl font-medium  "
+                  >
+                    میگزین
+                  </span>
                 </Menu.Item>
                 <Menu.Item key="2">
                   <span className="text-xl font-medium">پڑھیں</span>

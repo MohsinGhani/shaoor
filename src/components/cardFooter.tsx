@@ -9,7 +9,7 @@ type IProps = {
 const CardFooter = ({ title, topic, writer }: IProps) => {
   return (
     <div className="leading-8 max-w-auto max-sm:mt-[13px]">
-      <p className="text-right  text-[20px] text-[#004C9B] font-bold ">
+      <p className="text-right  text-[20px] text-[#004C9B] font-bold overflow-hidden ">
         {title}
       </p>
       <p className="text-right  font-bold text-[20px] text-[#1b1b1b]">
